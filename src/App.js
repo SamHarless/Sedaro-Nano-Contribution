@@ -40,7 +40,7 @@ const App = () => {
   
   const apiRequest = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/getComet');
+      const response = await fetch('http://localhost:5000/api/getComet'); // sends request to API container
 
       if (!response.ok) {
         throw new Error(`API call failed: ${response.status}`);
@@ -48,14 +48,14 @@ const App = () => {
 
       const data = await response.json()
 
-      const newElement = {
+      const newElement = { //builds new element from API request data
         x: data.xArr, 
         y: data.yArr, 
         type: data.type,
         name: data.name,
       }
 
-      setPlotData([...plotData,newElement])
+      setPlotData([...plotData,newElement]) // updates the plot data to be the old plot data + newElement
       console.log(data)
 
     } catch(error) {

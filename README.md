@@ -1,6 +1,6 @@
 # My Contribution:
 
-We were talking about how one of the next steps for Sedaro was to integrate 3rd part modeling software with Sedaro. I decided to base my contribution off of this, and add "3rd party simulation data" of comets. 
+We were talking about how one of the next steps for Sedaro was to integrate 3rd part modeling software with Sedaro. I decided to base my contribution off of this, and add functionality to communicate with "3rd party simulation software" of comets. 
 
 ![](./screenshot.png)
 
