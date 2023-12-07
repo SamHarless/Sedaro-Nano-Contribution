@@ -1,0 +1,10 @@
+FROM python:3.9
+
+WORKDIR /API/
+
+COPY flaskAPI.py /API/flaskAPI.py
+
+RUN pip install Flask
+RUN pip install Flask-CORS
+
+CMD ["python","flaskAPI.py"]
